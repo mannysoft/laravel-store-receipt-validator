@@ -1,6 +1,6 @@
 <?php 
 
-namespace Mannysoft\ReceiptValidator;
+namespace Mannysoft\StoreReceiptValidator;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
 
