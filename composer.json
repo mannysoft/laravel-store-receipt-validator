@@ -4,7 +4,10 @@
     "keywords": [
         "laravel",
         "validator",
-        "receipt"
+        "receipt",
+        "apple",
+        "android",
+        "in app purchase"
     ],
     "authors": [
         {
