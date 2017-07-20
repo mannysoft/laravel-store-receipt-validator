@@ -1,0 +1,23 @@
+{
+    "name": "mannysoft/laravel-store-receipt-validator",
+    "description": "Laravel receipt validator for Apple iTunes, Google Play",
+    "keywords": [
+        "laravel",
+        "validator",
+        "receipt"
+    ],
+    "authors": [
+        {
+            "name": "Manny Isles"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "aporat/store-receipt-validator": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mannysoft\\ReceiptValidator\\": "src/"
+        }
+    }
+}
