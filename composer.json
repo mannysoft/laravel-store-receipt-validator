@@ -3,11 +3,11 @@
     "description": "Laravel receipt validator for Apple iTunes, Google Play",
     "keywords": [
         "laravel",
-        "api",
-        "search",
-        "filter",
-        "sorting",
-        "search"
+        "validator",
+        "receipt",
+        "apple",
+        "android",
+        "in app purchase"
     ],
     "authors": [
         {
