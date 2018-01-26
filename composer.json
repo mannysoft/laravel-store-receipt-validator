@@ -3,11 +3,11 @@
     "description": "Laravel receipt validator for Apple iTunes, Google Play",
     "keywords": [
         "laravel",
-        "validator",
-        "receipt",
-        "apple",
-        "android",
-        "in app purchase"
+        "api",
+        "search",
+        "filter",
+        "sorting",
+        "search"
     ],
     "authors": [
         {
@@ -15,12 +15,25 @@
         }
     ],
     "require": {
-        "php": ">=5.6.4",
-        "aporat/store-receipt-validator": "2.0.0"
+        "php": ">=7.0.0"
     },
     "autoload": {
         "psr-0": {
             "Mannysoft\\StoreReceiptValidator\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mannysoft\\StoreReceiptValidator\\ServiceProvider"
+            ],
+            "aliases": {
+                "StoreReceiptValidator": "Mannysoft\\StoreReceiptValidator\\Facade"
+            }
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

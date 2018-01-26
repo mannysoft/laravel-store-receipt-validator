@@ -3,6 +3,7 @@
 namespace Mannysoft\StoreReceiptValidator;
 
 use Illuminate\Support\ServiceProvider as BaseServiceProvider;
+use Mannysoft\StoreReceiptValidator\StoreReceiptValidator;
 
 class ServiceProvider extends BaseServiceProvider {
     
@@ -14,10 +15,11 @@ class ServiceProvider extends BaseServiceProvider {
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../../config/receiptvalidator.php' => config_path('receiptvalidator.php'),
+            __DIR__ . '/../../config/store_validator.php' => config_path('store_validator.php'),
         ]);
+        
         $this->mergeConfigFrom(
-            __DIR__ . '/../../config/receiptvalidator.php', 'vatlayer'
+            __DIR__ . '/../../config/store_validator.php', 'store_validator'
         );
     }
 
@@ -28,10 +30,10 @@ class ServiceProvider extends BaseServiceProvider {
      */
     public function register()
     {
-        //$this->app->bind('vat-layer', function() {
-            //$apiKey = config('vatlayer.api_key');
-            //return new VatLayer();
-        //});
+        $this->app->bind('store_receipt_validator', function() {
+            //$apiKey = config('store_validator.api_key');
+            return new StoreReceiptValidator();
+        });
     }
 
 }
