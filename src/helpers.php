@@ -14,8 +14,8 @@ if (!function_exists('store_receipt')) {
 
 if (!function_exists('store_receipt_validate')) {
     
-    function store_receipt_validate()
+    function store_receipt_validate($store = 'android')
     {
-        return store_receipt()->validate();
+        return store_receipt()->validate($store);
     }
 }
