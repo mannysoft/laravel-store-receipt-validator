@@ -1,2 +1,2 @@
 # validator
-Laravel receipt validator for Apple iTunes, Google Pla
+Laravel receipt validator for Apple iTunes, Google Play
