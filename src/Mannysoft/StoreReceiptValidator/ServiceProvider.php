@@ -31,8 +31,7 @@ class ServiceProvider extends BaseServiceProvider {
     public function register()
     {
         $this->app->bind('store_receipt_validator', function() {
-            //$apiKey = config('store_validator.api_key');
-            return new StoreReceiptValidator();
+            return new StoreReceiptValidator(config('store_validator'));
         });
     }
 

@@ -7,11 +7,15 @@
         "receipt",
         "apple",
         "android",
-        "in app purchase"
+        "in app purchase",
+        "subscriptions",
+        "apple subscriptions",
+        "android subscriptions"
     ],
     "authors": [
         {
-            "name": "Manny Isles"
+            "name": "Manny Isles",
+            "email": "manny.isles@gmail.com"
         }
     ],
     "require": {
