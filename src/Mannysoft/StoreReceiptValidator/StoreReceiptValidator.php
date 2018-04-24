@@ -22,11 +22,12 @@ class StoreReceiptValidator {
 
     // http://blog.goforyt.com/validating-ios-app-purchases-laravel/
     // to do: support for amazon and unity purchase
+    // to do: validation of receipt via laravel form validation
     public function validate($store, $requestData = null)
     {
-    	$storeValidator = new \Mannysoft\StoreReceiptValidator\Apple();
+    	$storeValidator = new \Mannysoft\StoreReceiptValidator\Android();
     	if ($store == 'ios') {
-    		$storeValidator = new \Mannysoft\StoreReceiptValidator\Android();
+    		$storeValidator = new \Mannysoft\StoreReceiptValidator\Apple();
     	}
 		return $this->goValidate($storeValidator, $requestData);
     }
