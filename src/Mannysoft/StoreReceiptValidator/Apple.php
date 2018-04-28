@@ -99,6 +99,6 @@ class Apple implements StoreInterface {
 
 	public function getResult()
 	{
-		return 'data';
+		return $this->result;
 	}
 }

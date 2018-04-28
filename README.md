@@ -19,3 +19,11 @@ Mannysoft\StoreReceiptValidator\ServiceProvider::class,
 ```php
 php artisan vendor:publish --provider="Mannysoft\StoreReceiptValidator\ServiceProvider"
 ```
+
+```php
+php artisan vendor:publish --provider="Mannysoft\StoreReceiptValidator\ServiceProvider" --tag="migrations"
+```
+
+```php
+php artisan migrate
+```

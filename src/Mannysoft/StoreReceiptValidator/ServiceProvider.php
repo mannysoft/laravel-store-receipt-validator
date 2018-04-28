@@ -31,6 +31,11 @@ class ServiceProvider extends BaseServiceProvider {
         $this->mergeConfigFrom(
             __DIR__ . '/../../config/store_validator.php', 'store_validator'
         );
+
+        $timestamp = date('Y_m_d_His', time());
+        $this->publishes([
+            __DIR__.'/database/migrations/create_receipts_logs_table.php.stub' => $this->app->databasePath()."/migrations/{$timestamp}_create_receipts_logs_table.php",
+        ], 'migrations');
     }
 
     /**

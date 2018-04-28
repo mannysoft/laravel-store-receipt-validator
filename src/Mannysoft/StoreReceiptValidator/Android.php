@@ -103,9 +103,9 @@ class Android implements StoreInterface {
 	}
 
 	public function getResult()
-	{
-		return 'data';
-	}
+    {
+        return $this->result;
+    }
 
 	public function setAndroidApplicationName($applicationName)
     {
