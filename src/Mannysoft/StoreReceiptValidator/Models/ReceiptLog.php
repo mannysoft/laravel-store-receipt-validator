@@ -11,5 +11,5 @@ class ReceiptLog extends Model
 
     protected $table = 'receipts_logs';
     
-    protected $fillable = [];
+    protected $fillable = ['user_id', 'content', 'platform'];
 }
